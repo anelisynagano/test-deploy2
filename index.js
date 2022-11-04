@@ -16,6 +16,8 @@ app.use((req, res, next) => {
   next();
 });
 
+app.get('/test', (req, res) => res.send('test works'));
+
 // create user account
 app.post('/account/create/:name/:email/:password', function (req, res) {
   //  create user
